@@ -1,0 +1,1868 @@
+1                         J E S 2  J O B  L O G  --  S Y S T E M  M V S 1  --  N O D E  N 1
+0
+ 10.46.36 JOB06782 ---- FRIDAY,    02 FEB 2024 ----
+ 10.46.36 JOB06782  IRR010I  USERID TRAIN05  IS ASSIGNED TO THIS JOB.
+ 10.46.36 JOB06782  ICH70001I TRAIN05  LAST ACCESS AT 10:21:01 ON FRIDAY, FEBRUARY 2, 2024
+ 10.46.36 JOB06782  $HASP373 TRAIN05I STARTED - INIT 1    - CLASS A        - SYS MVS1
+ 10.46.36 JOB06782  IEF403I TRAIN05I - STARTED - TIME=10.46.36
+ 10.46.37 JOB06782  -                                      ----TIMINGS (MINUTES)-----                          -----PAGING COUNTS----
+ 10.46.37 JOB06782  -STEPNAME PROCSTEP    RC   EXCP   CONN       TCB       SRB  CLOCK          SERV  WORKLOAD  PAGE  SWAP   VIO SWAPS
+ 10.46.37 JOB06782  -PTPCH                00    287     13  0.001019  0.000038    0.0           413  PRDBAT       0     0     0     0
+ 10.46.37 JOB06782  IEF404I TRAIN05I - ENDED - TIME=10.46.37
+ 10.46.37 JOB06782  -TRAIN05I ENDED.  NAME-MAINTEC              TOTAL TCB CPU TIME= 0.001019 TOTAL ELAPSED TIME=   0.0 SUBSYS=JES2
+ 10.46.37 JOB06782  $HASP395 TRAIN05I ENDED - RC=0000
+0------ JES2 JOB STATISTICS ------
+-  02 FEB 2024 JOB EXECUTION DATE
+-           17 CARDS READ
+-        1,871 SYSOUT PRINT RECORDS
+-            0 SYSOUT PUNCH RECORDS
+-           92 SYSOUT SPOOL KBYTES
+-         0.00 MINUTES EXECUTION TIME
+         1 //TRAIN05I JOB 43312,'MAINTEC',                                         JOB06782
+           //             CLASS=A,MSGCLASS=H,MSGLEVEL=(1,1),NOTIFY=&SYSUID         00020000
+           //*******************************************************               00030000
+           //*** I-P-O  I(NPUT)   P(ROCESS)   O(UTPUT)  ************               00040000
+           //*** I - LIBRARY                          **************               00050000
+           //*** P - PRINT ENTIRE LIBRARY FROM SYSUT1  TO  SYSUT2  *               00060000
+           //***     PO=LIBRARY (MAX)MEMBS 200 1 RECORD FIELDS STMT*               00070000
+           //*** O - SEND DATA TO "PRINT" / JES / ******************               00080000
+           //*******************************************************               00090000
+           IEFC653I SUBSTITUTION JCL - 43312,'MAINTEC',CLASS=A,MSGCLASS=H,MSGLEVEL=(1,1),NOTIFY=TRAIN05
+         2 //PTPCH EXEC  PGM=IEBPTPCH                                              00100000
+         3 //SYSPRINT DD  SYSOUT=*                                                 00110000
+         4 //SYSIN    DD  *                                                        00120000
+         5 //SYSUT2   DD  SYSOUT=*                                         OUTPUT  00150000
+           //******  PRINT UP TO 200 MEMBERS OF A PDS                              00160000
+         6 //SYSUT1  DD  DSN=TRAIN05.CLASS.CICS,DISP=SHR                   INPUT   00170002
+ ICH70001I TRAIN05  LAST ACCESS AT 10:21:01 ON FRIDAY, FEBRUARY 2, 2024
+ IEFA111I TRAIN05I IS USING THE FOLLOWING JOB RELATED SETTINGS:
+          SWA=BELOW,TIOT SIZE=32K,DSENQSHR=DISALLOW,GDGBIAS=JOB
+ IEF236I ALLOC. FOR TRAIN05I PTPCH
+ IEF237I JES2 ALLOCATED TO SYSPRINT
+ IEF237I JES2 ALLOCATED TO SYSIN
+ IEF237I JES2 ALLOCATED TO SYSUT2
+ IEF237I 30B3 ALLOCATED TO SYSUT1
+ IEF142I TRAIN05I PTPCH - STEP WAS EXECUTED - COND CODE 0000
+ IEF285I   TRAIN05.TRAIN05I.JOB06782.D0000102.?         SYSOUT
+ IEF285I   TRAIN05.TRAIN05I.JOB06782.D0000101.?         SYSIN
+ IEF285I   TRAIN05.TRAIN05I.JOB06782.D0000103.?         SYSOUT
+ IEF285I   TRAIN05.CLASS.CICS                           KEPT
+ IEF285I   VOL SER NOS= USER01.
+ IEF373I STEP/PTPCH   /START 2024033.1046
+ IEF032I STEP/PTPCH   /STOP  2024033.1046
+         CPU:     0 HR  00 MIN  00.06 SEC    SRB:     0 HR  00 MIN  00.00 SEC
+         VIRT:    68K  SYS:   252K  EXT:        0K  SYS:    12784K
+         ATB- REAL:                  1056K  SLOTS:                     0K
+              VIRT- ALLOC:      13M SHRD:       0M
+ IEF375I  JOB/TRAIN05I/START 2024033.1046
+ IEF033I  JOB/TRAIN05I/STOP  2024033.1046
+         CPU:     0 HR  00 MIN  00.06 SEC    SRB:     0 HR  00 MIN  00.00 SEC
+1
+-PRINT/PUNCH DATA SET UTILITY                                                                      PAGE 0001
+   PRINT TYPORG=PO,MAXNAME=200,MAXFLDS=1                                 00130000
+   RECORD FIELD=(80)                                                     00140000
+  EOF ON SYSIN
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+  END OF DATA FOR SDS OR MEMBER
+1                                                                                                              PAGE 0001
+ MEMBER NAME  HELLO2
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       ***  HELLO WITH RECEIVE/SEND; NOT CONVERSATIONAL
+       ***  SAVE YOUR HELLO PROGRAM AS HELLO
+       ***  CHANGE PROGRAM-ID TO YOUR FIRST TRANSACTION NAME - TRAIN#P
+       ***  CHANGE MEMBER NAME TO YOUR FIRST TRANSACTION NAME - TRAIN#P
+       ***  CHANGE THE HELLO LENGTH AND VALUE TO ANOTHER WORD.
+       ***  CHANGE THE ACCEPTABLE INPUT NAME LENGTH TO 20
+       ***  CHANGE THE OUTPUT MESSAGE TO ALSO INCLUDE "FROM " YOUR NAME.
+       ***  CHANGE THE MAIN PARAGRAPH TO JUST BE PERFORMS PLUS GOBACK
+       ***  ONCE IT IS RUNNING CORRECTLY, SAVE AS HELLO2
+       *****************************************************************
+       ***  CHANGE LOG
+ C1    ***  CREATED 000 MAIN AND CREADTED PERFORM COMMANDS
+ C2    ***  SEPARARATED IN MSG AND OUT MSG INTO PARAGRAPH
+ C3    ***  CREATED END-PROGRAM PARAGRAPH INTO PARAGRAPH
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+       *    COPY DFHAID.
+       *    COPY DFHBMSCA.
+        01  WS-IN-MSG                 VALUE SPACES.
+            05                        PIC X(5).
+            05  WS-IN-NAME            PIC X(20).
+        01  WS-OUT-MSG.
+            05                        PIC X(06) VALUE 'HELLO'.
+            05  WS-OUT-NAME           PIC X(20).
+        01  .
+            05  WS-RESP-CODE          PIC S9(9) COMP.
+            05  WS-LENGTH-IN-MSG      PIC S9(4) COMP.
+        PROCEDURE DIVISION.
+ C1     000-MAINLINE.
+ C1         PERFORM 100-IN-MSG
+ C1         PERFORM 200-OUT-MSG
+ C1         PERFORM 700-END-PGM
+ C1         GOBACK
+ C1         .
+
+ C2     100-IN-MSG.
+ |          MOVE LENGTH OF WS-IN-MSG  TO WS-LENGTH-IN-MSG
+ |          EXEC CICS RECEIVE INTO(WS-IN-MSG)
+ |                    LENGTH(WS-LENGTH-IN-MSG)
+ |                    RESP(WS-RESP-CODE)
+ |          END-EXEC
+ |          EVALUATE TRUE
+ |            WHEN WS-RESP-CODE = (DFHRESP(NORMAL)
+ |                                 OR DFHRESP(EOC) )
+ |                         AND WS-LENGTH-IN-MSG > 5
+ |               MOVE WS-IN-NAME TO WS-OUT-NAME
+ |            WHEN WS-RESP-CODE = (DFHRESP(NORMAL)
+ |                                 OR DFHRESP(EOC) )
+ |                         AND WS-LENGTH-IN-MSG <= 5
+ |               MOVE 'INPUT TOO SHORT' TO WS-OUT-MSG
+ |            WHEN WS-RESP-CODE = DFHRESP(LENGERR)
+ |               MOVE 'INPUT TOO LONG' TO WS-OUT-MSG
+ |            WHEN OTHER
+1                                                                                                              PAGE 0002
+ MEMBER NAME  HELLO2
+ |               EXEC CICS ABEND ABCODE('X987')
+ |               END-EXEC
+ |          END-EVALUATE
+ |          .
+ |      200-OUT-MSG.
+ |          EXEC CICS SEND
+ |                    FROM(WS-OUT-MSG)
+ |                    LENGTH(LENGTH OF WS-OUT-MSG)
+ |                    ERASE
+ |                    RESP(WS-RESP-CODE)
+ |          END-EXEC
+ |
+ |          EVALUATE TRUE
+ |            WHEN WS-RESP-CODE NOT EQUAL DFHRESP(NORMAL)
+ |               EXEC CICS ABEND
+ |                         ABCODE('X222')
+ |               END-EXEC
+ |          END-EVALUATE
+ C2         .
+
+ C3     700-END-PGM.
+ C3         EXEC CICS
+ C3             RETURN
+ C3         END-EXEC
+ C3         .
+1                                                                                                              PAGE 0003
+ MEMBER NAME  BACKUP1
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       ***  HELLO WITH RECEIVE/SEND; NOT CONVERSATIONAL
+       ***  SAVE YOUR HELLO PROGRAM AS HELLO
+       ***  CHANGE PROGRAM-ID TO YOUR FIRST TRANSACTION NAME - TRAIN#P
+       ***  CHANGE MEMBER NAME TO YOUR FIRST TRANSACTION NAME - TRAIN#P
+       ***  CHANGE THE HELLO LENGTH AND VALUE TO ANOTHER WORD.
+       ***  CHANGE THE ACCEPTABLE INPUT NAME LENGTH TO 20
+       ***  CHANGE THE OUTPUT MESSAGE TO ALSO INCLUDE "FROM " YOUR NAME.
+       ***  CHANGE THE MAIN PARAGRAPH TO JUST BE PERFORMS PLUS GOBACK
+       ***  ONCE IT IS RUNNING CORRECTLY, SAVE AS HELLO2
+       *****************************************************************
+       ***  CHANGE LOG
+ C1    ***  CREATED 000 MAIN AND CREADTED PERFORM COMMANDS
+ C2    ***  SEPARARATED IN MSG AND OUT MSG INTO PARAGRAPH
+ C3    ***  CREATED END-PROGRAM PARAGRAPH INTO PARAGRAPH
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+       *    COPY DFHAID.
+       *    COPY DFHBMSCA.
+        01  WS-IN-MSG                 VALUE SPACES.
+            05                        PIC X(5).
+            05  WS-IN-NAME            PIC X(20).
+        01  WS-OUT-MSG.
+            05                        PIC X(06) VALUE 'HELLO'.
+            05  WS-OUT-NAME           PIC X(20).
+        01  .
+            05  WS-RESP-CODE          PIC S9(9) COMP.
+            05  WS-LENGTH-IN-MSG      PIC S9(4) COMP.
+        PROCEDURE DIVISION.
+ C1     000-MAINLINE.
+ C1         PERFORM 100-IN-MSG
+ C1         PERFORM 200-OUT-MSG
+ C1         PERFORM 700-END-PGM
+ C1         GOBACK
+ C1         .
+
+ C2     100-IN-MSG.
+ |          MOVE LENGTH OF WS-IN-MSG  TO WS-LENGTH-IN-MSG
+ |          EXEC CICS RECEIVE INTO(WS-IN-MSG)
+ |                    LENGTH(WS-LENGTH-IN-MSG)
+ |                    RESP(WS-RESP-CODE)
+ |          END-EXEC
+ |          EVALUATE TRUE
+ |            WHEN WS-RESP-CODE = (DFHRESP(NORMAL)
+ |                                 OR DFHRESP(EOC) )
+ |                         AND WS-LENGTH-IN-MSG > 5
+ |               MOVE WS-IN-NAME TO WS-OUT-NAME
+ |            WHEN WS-RESP-CODE = (DFHRESP(NORMAL)
+ |                                 OR DFHRESP(EOC) )
+ |                         AND WS-LENGTH-IN-MSG <= 5
+ |               MOVE 'INPUT TOO SHORT' TO WS-OUT-MSG
+ |            WHEN WS-RESP-CODE = DFHRESP(LENGERR)
+ |               MOVE 'INPUT TOO LONG' TO WS-OUT-MSG
+ |            WHEN OTHER
+1                                                                                                              PAGE 0004
+ MEMBER NAME  BACKUP1
+ |               EXEC CICS ABEND ABCODE('X987')
+ |               END-EXEC
+ |          END-EVALUATE
+ |          .
+ |      200-OUT-MSG.
+ |          EXEC CICS SEND
+ |                    FROM(WS-OUT-MSG)
+ |                    LENGTH(LENGTH OF WS-OUT-MSG)
+ |                    ERASE
+ |                    RESP(WS-RESP-CODE)
+ |          END-EXEC
+ |
+ |          EVALUATE TRUE
+ |            WHEN WS-RESP-CODE NOT EQUAL DFHRESP(NORMAL)
+ |               EXEC CICS ABEND
+ |                         ABCODE('X222')
+ |               END-EXEC
+ |          END-EVALUATE
+ C2         .
+
+ C3     700-END-PGM.
+ C3         EXEC CICS
+ C3             RETURN
+ C3         END-EXEC
+ C3         .
+1                                                                                                              PAGE 0005
+ MEMBER NAME  INDEXCOB
+ CICS COBOL INDEX
+ HELLO2
+     C1  CREATED 000 MAIN AND CREADTED PERFORM COMMANDS
+     C2  SEPARARATED IN MSG AND OUT MSG INTO PARAGRAPH
+     C3  CREATED END-PROGRAM PARAGRAPH INTO PARAGRAPH
+1                                                                                                              PAGE 0006
+ MEMBER NAME  NONAME
+        IDENTIFICATION DIVISION.
+        PROGRAM-ID. TRAIN5P.
+        ENVIRONMENT DIVISION.
+        DATA DIVISION.
+
+        WORKING-STORAGE SECTION.
+        01  WS-COMMAREA                     PIC X(06).
+       *********************** COPY BOOKS  ************************
+        COPY TESTMAP.
+        COPY DFHAID.
+
+        LINKAGE SECTION.
+        01  DFHCOMMAREA                      PIC X(06).
+        PROCEDURE DIVISION.
+        0000-MAIN-PROCESS.
+       ************************************************************
+       *****************   START OF FIRST TIME   ******************
+       ************************************************************
+            IF EIBAID = DFHCLEAR  EXEC CICS  RETURN END-EXEC END-IF
+            IF EIBCALEN = 0
+       ******************  FIRST TIME   SEND AN EMPTY SCREEN   ****
+               MOVE LOW-VALUES         TO  TESTMAPO
+               EXEC  CICS  SEND MAP('TESTMAP')
+                            FROM(TESTMAPO)
+                            ERASE
+               END-EXEC
+               EXEC CICS  RETURN  TRANSID('TRA3')
+                                  COMMAREA(WS-COMMAREA)   END-EXEC
+       ************************************************************
+       *****************   END OF FIRST TIME   ********************
+       ************************************************************
+            ELSE
+       ************************************************************
+       ********************  AFTER THE FIRST TIME  ****************
+       ************************************************************
+               MOVE LOW-VALUES         TO  TESTMAPI
+               MOVE DFHCOMMAREA        TO  WS-COMMAREA
+               EXEC CICS
+                 RECEIVE MAP('TESTMAP')
+                         INTO (TESTMAPI)
+               END-EXEC
+            END-IF
+       ************************   PROCESS THE INPUT   *************
+            IF EMPNOL  = 0
+               MOVE LOW-VALUES         TO  TESTMAPO
+               MOVE 'TRY AGAIN ZZZ'    TO  MSGO
+            ELSE
+               MOVE LOW-VALUES         TO  TESTMAPO
+               MOVE 'INPUT HAS BEEN ENTERED ZZZ'  TO MSGO
+            END-IF
+            EXEC CICS
+               SEND MAP('TESTMAP')
+                   FROM (TESTMAPO) ERASE   END-EXEC
+            EXEC CICS  RETURN  TRANSID('TRA3')
+                                  COMMAREA(WS-COMMAREA)   END-EXEC
+            .
+1                                                                                                              PAGE 0007
+ MEMBER NAME  HELLO
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       ***  HELLO WITH SEND; NOT CONVERSATIONAL
+       ***  CHANGE PROGRAM-ID TO YOUR FIRST TRANSACTION NAME - TRAIN#P
+       ***  CHANGE MEMBER NAME TO YOUR FIRST TRANSACTION NAME - TRAIN#P
+       ***  TYPE YOUR NAME AS THE VALUE FOR WS-OUT-NAME
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+       *    COPY DFHAID.
+       *    COPY DFHBMSCA.
+        01  WS-OUT-MSG.
+            05                        PIC X(6) VALUE 'HELLO'.
+            05  WS-OUT-NAME           PIC X(12) VALUE 'REGINALD'.
+        01  .
+            05  WS-RESP-CODE          PIC S9(9) COMP.
+        PROCEDURE DIVISION.
+        100-MAINLINE.
+            PERFORM 200-SEND-MSG
+            PERFORM 700-END-PGM
+            GOBACK
+            .
+        200-SEND-MSG.
+            EXEC CICS SEND
+                      FROM(WS-OUT-MSG)
+                      LENGTH(LENGTH OF WS-OUT-MSG)
+                      ERASE
+                      RESP(WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+              WHEN WS-RESP-CODE NOT EQUAL DFHRESP(NORMAL)
+                 EXEC CICS ABEND
+                           ABCODE('X222')
+                 END-EXEC
+            END-EVALUATE
+            .
+        700-END-PGM.
+            EXEC CICS
+                RETURN
+            END-EXEC
+            .
+1                                                                                                              PAGE 0008
+ MEMBER NAME  BCKUPMP1
+         PRINT  NOGEN                                                    00010000
+ MAPS5P  DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,                      X00020000
+                LANG=COBOL,TIOAPFX=YES,CTRL=FREEKB,                     X00030000
+                DSATTS=COLOR,MAPATTS=COLOR                               00040000
+ LOGON1  DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00050000
+         DFHMDF POS=(3,24),LENGTH=32,                                   X00060000
+                INITIAL='EMPLOYEE INFORMATION   - TEAM AA',             X00070000
+                ATTRB=ASKIP,COLOR=BLUE                                   00080000
+ *                 1         2         3                                 00090000
+ *       123456789012345678901234567890                                  00100000
+ *       @EMP NO:   @123456@                                             00110000
+         DFHMDF POS=(5,01),LENGTH=08,INITIAL='EMP NO:  '                 00120000
+ EMPNO   DFHMDF POS=(5,12),LENGTH=6,ATTRB=(UNPROT,IC)                    00130000
+         DFHMDF POS=(5,19),LENGTH=1,ATTRB=ASKIP                          00140000
+ *                                                                       00150000
+         DFHMDF POS=(7,01),LENGTH=08,INITIAL='LNAME  : '                 00160000
+ LNAME   DFHMDF POS=(7,12),LENGTH=15,ATTRB=ASKIP                         00170000
+ *                                                                       00180000
+         DFHMDF POS=(9,01),LENGTH=08,INITIAL='FNAME  : '                 00190000
+ FNAME   DFHMDF POS=(9,12),LENGTH=12,ATTRB=ASKIP                         00200000
+         DFHMDF POS=(15,1),LENGTH=16,ATTRB=ASKIP,                       X00210000
+                INITIAL='REGINALD CALHOUN'                               00220000
+         DFHMDF POS=(16,1),LENGTH=16,ATTRB=ASKIP,                       X00230000
+                INITIAL='LIVES IN GEORGIA'                               00240000
+         DFHMDF POS=(17,1),LENGTH=07,ATTRB=ASKIP,                       X00250000
+                INITIAL='MARRIED'                                        00260000
+         DFHMDF POS=(18,1),LENGTH=06,ATTRB=ASKIP,                       X00270000
+                INITIAL='3 KIDS'                                         00280000
+ *                                                                       00290000
+ MSG     DFHMDF POS=(24,01),LENGTH=60,ATTRB=ASKIP                        00300000
+ *                                                                       00310000
+ NOMPFAIL DFHMDF POS=(24,76),LENGTH=01,ATTRB=(ASKIP,FSET),INITIAL='1'    00320000
+ SUCCESS DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00330000
+         DFHMDF POS=(12,30),LENGTH=50,ATTRB=(ASKIP,BRT),                X00340000
+                INITIAL='THANK YOU FOR VISITING OUR SITE'                00350000
+         DFHMSD TYPE=FINAL                                               00360000
+          END                                                            00370000
+1                                                                                                              PAGE 0009
+ MEMBER NAME  INDEXASM
+ CICS MAPS INDEX
+     TESTMAPS
+       C1- ADD NOGEN AT HE TOP
+       C2- ADD NAME FIELD
+       C3- ADD STATE
+       C4- ADD MERITAL STATUS
+       C5- ADD NUMBER OF KIDS
+1                                                                                                              PAGE 0010
+ MEMBER NAME  INDEXJCL
+ CICS JCL INDEX                                                          00010004
+ CICSCOBS                                                                00020004
+   STEP 01                                                               00030004
+       I - DSN= TRAIN05.CLASS.CICS(HELLO2)                               00040004
+       P - IEBGENER COPY ONE DS TO ANOTHER                               00050004
+       O - DSN=TRAIN05.CLASS.CICS(TRAIN5P)                               00060004
+   STEP 02                                                               00070004
+       I - DSN=TRAIN05.CLASS.CICS(TRAIN5P)                               00080005
+       P - IMBUSER PROC COMPILE COBOL FOR CICS CEMT                      00090005
+       O - PROG FOR CICS                                                 00100005
+ **********************************************************************  00101006
+ CICSCOBS                                                                00110005
+   STEP 01                                                               00120005
+       I - DSN= TRAIN05.CLASS.CICS(TESTMAPS)                             00130005
+       P - IEBGENER COPY ONE DS TO ANOTHER                               00140005
+       O - DSN=TRAIN05.CLASS.CICS(MAPS5P)                                00150005
+   STEP 02                                                               00160005
+       I - DSN=TRAIN05.CLASS.CICS(MAPS5P)                                00170005
+       P - CICSMAPS1 COMPILE ASM FOR CECI                                00180006
+       O - ABILITY TO VIEW IN CECI                                       00190006
+1                                                                                                              PAGE 0011
+ MEMBER NAME  LOGON1
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       *** C1  12/22 IMPLAMENTED FIX PROVIDED FOR FIRST-TIME
+       ***
+       ***
+       ***
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+            COPY DFHAID.
+            COPY MAPS5P.
+        01  WORK-AREAS.
+            05  WS-RESP-CODE   PIC S9(9) COMP.
+            05  WS-TRANSID     PIC X(4) VALUE 'TRA5'.
+        01  WS-COMMAREA.
+            05  FILLER          PIC X(20).
+            05  WS-SWITCH       PIC X.
+            05  WS-OTHER-VARS   PIC X(99).
+            05  WS-INPUT-COUNT  PIC S9(3) COMP-3.
+        LINKAGE SECTION.
+        01  DFHCOMMAREA.
+            05  FILLER          PIC X(20).
+            05  DFH-SWITCH      PIC X.
+            05  DFH-OTHER-VARS  PIC X(99).
+            05  DFH-INPUT-COUNT PIC S9(3) COMP-3.
+        PROCEDURE DIVISION.
+        0000-MAIN.
+            IF EIBAID = DFHCLEAR
+               EXEC CICS
+                    RETURN
+               END-EXEC
+            END-IF
+
+            IF EIBCALEN > ZERO
+                MOVE DFHCOMMAREA TO WS-COMMAREA
+            END-IF
+
+            EVALUATE TRUE
+            WHEN EIBCALEN = ZERO   OR
+                 EIBTRNID NOT EQUAL WS-TRANSID
+               PERFORM 1000-FIRST-TIME
+            WHEN EIBAID = DFHPF9 OR DFHCLEAR
+              PERFORM 4000-LAST-TIME
+            WHEN OTHER
+               PERFORM 0500-PROCESS-USER-INPUT
+               PERFORM 3100-SEND-MAP
+            END-EVALUATE
+
+            PERFORM 3200-RETURN-WITH-TRANSID
+            GOBACK
+            .
+        0500-PROCESS-USER-INPUT.
+              PERFORM 2000-RECEIVE-AND-PROCESS-MAP
+              PERFORM 3100-SEND-MAP
+            .
+        1000-FIRST-TIME.
+1                                                                                                              PAGE 0012
+ MEMBER NAME  LOGON1
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            MOVE LOW-VALUES TO LOGON1O
+            MOVE 'FIRST TIME' TO MSGO
+            MOVE SPACES TO LNAMEO
+            MOVE SPACES TO FNAMEO
+            EXEC CICS SEND
+                      MAP('LOGON1')
+                      MAPSET('MAPS5P') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+       **********PROCESS A BAD ERROR OCCURRED
+                MOVE '1000-FIRST-TIME ERROR'
+                     TO MSGO
+            END-EVALUATE
+            MOVE ZERO TO WS-INPUT-COUNT
+            PERFORM 3200-RETURN-WITH-TRANSID
+            .
+        2000-RECEIVE-AND-PROCESS-MAP.
+            EXEC CICS RECEIVE
+                      MAP   ('LOGON1')
+                      MAPSET('MAPS5P')
+                      RESP  (WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+            WHEN WS-RESP-CODE = DFHRESP(MAPFAIL)
+                MOVE 'NO INPUT SUPPLIED'
+                  TO MSGO
+            WHEN WS-RESP-CODE NOT =
+                DFHRESP(NORMAL) AND DFHRESP(EOC)
+                MOVE 'RESPONSE ERROR'
+                  TO MSGO
+       ************PROCESS A BAD ERROR OCCURRED
+            WHEN OTHER
+                PERFORM 3000-PROCESS-MAP-INPUT
+            END-EVALUATE
+            .
+        3000-PROCESS-MAP-INPUT.
+       ******TEST THE SWITCH
+       ******PROCESS THE MAP INPUT AND MOVE
+       ******ANSWERS TO OUTPUT MAP
+            EVALUATE TRUE
+ C1           WHEN EMPNOI = '123456'
+                  MOVE 'JOHN' TO FNAMEO
+                  MOVE 'SMITH' TO LNAMEO
+              WHEN OTHER
+                  MOVE SPACES TO LNAMEO
+                  MOVE SPACES TO FNAMEO
+                  MOVE 'NOT FOUND OR INVALID INPUT' TO MSGO
+            END-EVALUATE
+            ADD 1 TO WS-INPUT-COUNT
+            .
+        3100-SEND-MAP.
+            EXEC CICS SEND
+1                                                                                                              PAGE 0013
+ MEMBER NAME  LOGON1
+                      MAP('LOGON1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+                 MOVE 'SEND MAP ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3200-RETURN-WITH-TRANSID.
+            EXEC CICS RETURN
+                   TRANSID(WS-TRANSID)
+                   COMMAREA(WS-COMMAREA)
+                   LENGTH(LENGTH OF WS-COMMAREA)
+            END-EXEC
+            .
+        4000-LAST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            EXEC CICS SEND
+                      MAP('SUCCESS')
+                      MAPSET('MAPS5P') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+              MOVE 'LAST-TIME ERROR'
+                TO MSGO
+       **********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            EXEC CICS RETURN
+            END-EXEC
+            .
+1                                                                                                              PAGE 0014
+ MEMBER NAME  LOGONV1
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       *** C1  12/22 IMPLAMENTED FIX PROVIDED FOR FIRST-TIME
+       ***
+       ***
+       ***
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+            COPY DFHAID.
+            COPY MAPS5P.
+        01  WORK-AREAS.
+            05  WS-RESP-CODE   PIC S9(09) COMP.
+            05  WS-TRANSID     PIC X(04) VALUE 'TRA5'.
+        01  WS-COMMAREA.
+            05  FILLER          PIC X(20).
+            05  WS-SWITCH       PIC X.
+            05  WS-OTHER-VARS   PIC X(99).
+            05  WS-INPUT-COUNT  PIC S9(03) COMP-3.
+        01  WS-EMP-REC.
+          05  WS-EMP-REC-EMP-NUM         PIC X(6).
+          05  WS-EMP-REC-LAST-NAME       PIC X(15).
+          05  WS-EMP-REC-FIRST-NAME      PIC X(12).
+          05  WS-EMP-REC-MID-IN          PIC X(1).
+          05  WS-EMP-REC-DEPT-NUM        PIC X(3).
+          05  WS-EMP-REC-JOB-TITLE       PIC X(11).
+          05  WS-EMP-REC-EMP-SAL         PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-PHN         PIC X(4).
+          05  WS-EMP-REC-EMP-BONUS       PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-COMM        PIC 9(5)V99.
+          05  FILLER                     PIC X(07).
+        LINKAGE SECTION.
+        01  DFHCOMMAREA.
+            05  FILLER          PIC X(20).
+            05  DFH-SWITCH      PIC X.
+            05  DFH-OTHER-VARS  PIC X(99).
+            05  DFH-INPUT-COUNT PIC S9(03) COMP-3.
+        PROCEDURE DIVISION.
+        0000-MAIN.
+            IF EIBAID = DFHCLEAR
+               EXEC CICS
+                    RETURN
+               END-EXEC
+            END-IF
+
+            IF EIBCALEN > ZERO
+                MOVE DFHCOMMAREA TO WS-COMMAREA
+            END-IF
+
+            EVALUATE TRUE
+            WHEN EIBCALEN = ZERO   OR
+                 EIBTRNID NOT EQUAL WS-TRANSID
+                 PERFORM 1000-FIRST-TIME
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            WHEN EIBAID = DFHPF9 OR DFHCLEAR
+                 PERFORM 4000-LAST-TIME
+1                                                                                                              PAGE 0015
+ MEMBER NAME  LOGONV1
+                 PERFORM 3300-RETURN-WITHOUT-TRANSID
+            WHEN OTHER
+                 PERFORM 0500-PROCESS-USER-INPUT
+                 PERFORM 3100-SEND-MAP
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            END-EVALUATE
+
+            GOBACK
+            .
+        0500-PROCESS-USER-INPUT.
+            PERFORM 2000-RECEIVE-AND-PROCESS-MAP
+            PERFORM 3100-SEND-MAP
+            .
+        1000-FIRST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            MOVE LOW-VALUES TO LOGON1O
+            MOVE 'FIRST TIME' TO MSGO
+            MOVE SPACES TO LNAMEO
+            MOVE SPACES TO FNAMEO
+            EXEC CICS SEND
+                      MAP('LOGON1')
+                      MAPSET('MAPS5P') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+       **********PROCESS A BAD ERROR OCCURRED
+                MOVE '1000-FIRST-TIME ERROR'
+                     TO MSGO
+            END-EVALUATE
+            MOVE ZERO TO WS-INPUT-COUNT
+            .
+        2000-RECEIVE-AND-PROCESS-MAP.
+            EXEC CICS RECEIVE
+                      MAP   ('LOGON1')
+                      MAPSET('MAPS5P')
+                      RESP  (WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+            WHEN WS-RESP-CODE = DFHRESP(MAPFAIL)
+                MOVE 'NO INPUT SUPPLIED'
+                  TO MSGO
+            WHEN WS-RESP-CODE NOT =
+                DFHRESP(NORMAL) AND DFHRESP(EOC)
+                MOVE 'RESPONSE ERROR'
+                  TO MSGO
+       ************PROCESS A BAD ERROR OCCURRED
+            WHEN OTHER
+                PERFORM 3000-PROCESS-MAP-INPUT
+            END-EVALUATE
+            .
+        3000-PROCESS-MAP-INPUT.
+            EXEC CICS
+                  READ FILE('TRAIN5F')
+                  INTO(WS-EMP-REC)
+1                                                                                                              PAGE 0016
+ MEMBER NAME  LOGONV1
+                  RIDFLD(EMPNOI)
+                  RESP(WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 PERFORM 3050-PROCESS-VSAM-REC
+            WHEN  DFHRESP(NOTFND)
+                 MOVE 'RECORD NOT FOUND'
+                  TO MSGO
+            WHEN OTHER
+                 MOVE 'VSAM READ ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3050-PROCESS-VSAM-REC.
+            MOVE WS-EMP-REC-LAST-NAME TO LNAMEO
+            MOVE WS-EMP-REC-FIRST-NAME TO FNAMEO
+            .
+        3100-SEND-MAP.
+            EXEC CICS SEND
+                      MAP('LOGON1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+                 MOVE 'SEND MAP ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3200-RETURN-WITH-TRANSID.
+            EXEC CICS RETURN
+                   TRANSID(WS-TRANSID)
+                   COMMAREA(WS-COMMAREA)
+                   LENGTH(LENGTH OF WS-COMMAREA)
+            END-EXEC
+            .
+        3300-RETURN-WITHOUT-TRANSID.
+            EXEC CICS RETURN
+            END-EXEC
+            .
+        4000-LAST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            EXEC CICS SEND
+                      MAP('SUCCESS')
+                      MAPSET('MAPS5P') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+1                                                                                                              PAGE 0017
+ MEMBER NAME  LOGONV1
+              MOVE 'LAST-TIME ERROR'
+                TO MSGO
+       **********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            EXEC CICS RETURN
+            END-EXEC
+            .
+1                                                                                                              PAGE 0018
+ MEMBER NAME  TESTMAP
+         PRINT  NOGEN                                                    00010016
+ MAPS5P  DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,                      X00020016
+                LANG=COBOL,TIOAPFX=YES,CTRL=FREEKB,                     X00030016
+                DSATTS=COLOR,MAPATTS=COLOR                               00040016
+ LOGON1  DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00050016
+ *                                                                       00050123
+         DFHMDF POS=(1,61),LENGTH=07,INITIAL='DATE : '                   00050223
+ DATE    DFHMDF POS=(1,68),LENGTH=09,ATTRB=ASKIP                         00051023
+ *                                                                       00052023
+         DFHMDF POS=(2,61),LENGTH=07,INITIAL='TIME : '                   00053023
+ TIME    DFHMDF POS=(2,68),LENGTH=08,ATTRB=ASKIP                         00054023
+ *                                                                       00055023
+         DFHMDF POS=(3,24),LENGTH=32,                                   X00056023
+                INITIAL='EMPLOYEE INFORMATION   - TEAM AA',             X00070016
+                ATTRB=ASKIP,COLOR=BLUE                                   00080016
+ *                 1         2         3                                 00090016
+ *       123456789012345678901234567890                                  00100016
+ *       @EMP NO:   @123456@                                             00110016
+         DFHMDF POS=(5,01),LENGTH=08,INITIAL='EMP NO:  '                 00120016
+ EMPNO   DFHMDF POS=(5,12),LENGTH=6,ATTRB=(UNPROT,IC)                    00130022
+         DFHMDF POS=(5,19),LENGTH=1,ATTRB=ASKIP                          00140016
+ *                                                                       00150016
+         DFHMDF POS=(7,01),LENGTH=08,INITIAL='LNAME  : '                 00160016
+ LNAME   DFHMDF POS=(7,12),LENGTH=15,ATTRB=ASKIP                         00170022
+ *                                                                       00180016
+         DFHMDF POS=(9,01),LENGTH=08,INITIAL='FNAME  : '                 00190016
+ FNAME   DFHMDF POS=(9,12),LENGTH=12,ATTRB=ASKIP                         00200022
+ *                                                                       00203024
+ *       DFHMDF POS=(15,1),LENGTH=16,ATTRB=ASKIP,                        00210020
+ *              INITIAL='REGINALD CALHOUN'                               00220019
+ *       DFHMDF POS=(16,1),LENGTH=16,ATTRB=ASKIP,                        00230020
+ *              INITIAL='LIVES IN GEORGIA'                               00240019
+ *       DFHMDF POS=(17,1),LENGTH=07,ATTRB=ASKIP,                        00250020
+ *              INITIAL='MARRIED'                                        00260019
+ *       DFHMDF POS=(18,1),LENGTH=06,ATTRB=ASKIP,                        00270020
+ *              INITIAL='3 KIDS'                                         00280019
+ *                                                                       00290016
+ MSG     DFHMDF POS=(24,01),LENGTH=60,ATTRB=ASKIP                        00300016
+ *                                                                       00310016
+ NOMPFAIL DFHMDF POS=(24,76),LENGTH=01,ATTRB=(ASKIP,FSET),INITIAL='1'    00320016
+ *********************************************************************** 00321018
+ SUCCESS DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00330016
+         DFHMDF POS=(12,30),LENGTH=50,ATTRB=(ASKIP,BRT),                X00340016
+                INITIAL='THANK YOU FOR VISITING OUR SITE'                00350016
+         DFHMSD TYPE=FINAL                                               00360016
+          END                                                            00370016
+1                                                                                                              PAGE 0019
+ MEMBER NAME  TRAIN5P
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       *** C1  12/22 IMPLAMENTED FIX PROVIDED FOR FIRST-TIME
+       ***
+       ***
+       ***
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+            COPY DFHAID.
+            COPY MAPS5P.
+        01  WORK-AREAS.
+            05  WS-RESP-CODE   PIC S9(09) COMP.
+            05  WS-TRANSID     PIC X(04) VALUE 'TRA5'.
+        01  WS-COMMAREA.
+            05  FILLER          PIC X(20).
+            05  WS-SWITCH       PIC X.
+            05  WS-OTHER-VARS   PIC X(99).
+            05  WS-INPUT-COUNT  PIC S9(03) COMP-3.
+        01  WS-EMP-REC.
+          05  WS-EMP-REC-EMP-NUM         PIC X(6).
+          05  WS-EMP-REC-LAST-NAME       PIC X(15).
+          05  WS-EMP-REC-FIRST-NAME      PIC X(12).
+          05  WS-EMP-REC-MID-IN          PIC X(1).
+          05  WS-EMP-REC-DEPT-NUM        PIC X(3).
+          05  WS-EMP-REC-JOB-TITLE       PIC X(11).
+          05  WS-EMP-REC-EMP-SAL         PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-PHN         PIC X(4).
+          05  WS-EMP-REC-EMP-BONUS       PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-COMM        PIC 9(5)V99.
+          05  FILLER                     PIC X(07).
+        LINKAGE SECTION.
+        01  DFHCOMMAREA.
+            05  FILLER          PIC X(20).
+            05  DFH-SWITCH      PIC X.
+            05  DFH-OTHER-VARS  PIC X(99).
+            05  DFH-INPUT-COUNT PIC S9(03) COMP-3.
+        PROCEDURE DIVISION.
+        0000-MAIN.
+            IF EIBAID = DFHCLEAR
+               EXEC CICS
+                    RETURN
+               END-EXEC
+            END-IF
+
+            IF EIBCALEN > ZERO
+                MOVE DFHCOMMAREA TO WS-COMMAREA
+            END-IF
+
+            EVALUATE TRUE
+            WHEN EIBCALEN = ZERO   OR
+                 EIBTRNID NOT EQUAL WS-TRANSID
+                 PERFORM 1000-FIRST-TIME
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            WHEN EIBAID = DFHPF9 OR DFHCLEAR
+                 PERFORM 4000-LAST-TIME
+1                                                                                                              PAGE 0020
+ MEMBER NAME  TRAIN5P
+                 PERFORM 3300-RETURN-WITHOUT-TRANSID
+            WHEN OTHER
+                 PERFORM 0500-PROCESS-USER-INPUT
+                 PERFORM 3100-SEND-MAP
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            END-EVALUATE
+
+            GOBACK
+            .
+        0500-PROCESS-USER-INPUT.
+            PERFORM 2000-RECEIVE-AND-PROCESS-MAP
+            PERFORM 3100-SEND-MAP
+            .
+        1000-FIRST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            MOVE LOW-VALUES TO LOGON1O
+            MOVE 'FIRST TIME' TO MSGO
+            MOVE SPACES TO LNAMEO
+            MOVE SPACES TO FNAMEO
+            EXEC CICS SEND
+                      MAP('LOGON1')
+                      MAPSET('MAPS5P') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+       **********PROCESS A BAD ERROR OCCURRED
+                MOVE '1000-FIRST-TIME ERROR'
+                     TO MSGO
+            END-EVALUATE
+            MOVE ZERO TO WS-INPUT-COUNT
+            .
+        2000-RECEIVE-AND-PROCESS-MAP.
+            EXEC CICS RECEIVE
+                      MAP   ('LOGON1')
+                      MAPSET('MAPS5P')
+                      RESP  (WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+            WHEN WS-RESP-CODE = DFHRESP(MAPFAIL)
+                MOVE 'NO INPUT SUPPLIED'
+                  TO MSGO
+            WHEN WS-RESP-CODE NOT =
+                DFHRESP(NORMAL) AND DFHRESP(EOC)
+                MOVE 'RESPONSE ERROR'
+                  TO MSGO
+       ************PROCESS A BAD ERROR OCCURRED
+            WHEN OTHER
+                PERFORM 3000-PROCESS-MAP-INPUT
+            END-EVALUATE
+            .
+        3000-PROCESS-MAP-INPUT.
+            EXEC CICS
+                  READ FILE('TRAIN5F')
+                  INTO(WS-EMP-REC)
+1                                                                                                              PAGE 0021
+ MEMBER NAME  TRAIN5P
+                  RIDFLD(EMPNOI)
+                  RESP(WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 PERFORM 3050-PROCESS-VSAM-REC
+            WHEN  DFHRESP(NOTFND)
+                 MOVE 'RECORD NOT FOUND'
+                  TO MSGO
+            WHEN OTHER
+                 MOVE 'VSAM READ ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3050-PROCESS-VSAM-REC.
+            MOVE WS-EMP-REC-LAST-NAME TO LNAMEO
+            MOVE WS-EMP-REC-FIRST-NAME TO FNAMEO
+            .
+        3100-SEND-MAP.
+            EXEC CICS SEND
+                      MAP('LOGON1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+                 MOVE 'SEND MAP ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3200-RETURN-WITH-TRANSID.
+            EXEC CICS RETURN
+                   TRANSID(WS-TRANSID)
+                   COMMAREA(WS-COMMAREA)
+                   LENGTH(LENGTH OF WS-COMMAREA)
+            END-EXEC
+            .
+        3300-RETURN-WITHOUT-TRANSID.
+            EXEC CICS RETURN
+            END-EXEC
+            .
+        4000-LAST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            EXEC CICS SEND
+                      MAP('SUCCESS')
+                      MAPSET('MAPS5P') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+1                                                                                                              PAGE 0022
+ MEMBER NAME  TRAIN5P
+              MOVE 'LAST-TIME ERROR'
+                TO MSGO
+       **********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            EXEC CICS RETURN
+            END-EXEC
+            .
+1                                                                                                              PAGE 0023
+ MEMBER NAME  SALMAP
+         PRINT  NOGEN                                                    00010000
+ MAPS5P  DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,                      X00020000
+                LANG=COBOL,TIOAPFX=YES,CTRL=FREEKB,                     X00030000
+                DSATTS=COLOR,MAPATTS=COLOR                               00040000
+ SALARY1 DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00050004
+ *                                                                       00050100
+         DFHMDF POS=(1,60),LENGTH=07,INITIAL='DATE :'                    00050202
+ DATE    DFHMDF POS=(1,68),LENGTH=10,ATTRB=ASKIP                         00051002
+ *                                                                       00052000
+         DFHMDF POS=(2,60),LENGTH=07,INITIAL='TIME :'                    00053002
+ TIME    DFHMDF POS=(2,68),LENGTH=08,ATTRB=ASKIP                         00054000
+ *                                                                       00055000
+         DFHMDF POS=(3,24),LENGTH=32,                                   X00056000
+                INITIAL='EMPLOYEE INFORMATION   - TEAM AA',             X00070000
+                ATTRB=ASKIP,COLOR=BLUE                                   00080000
+ *                 1         2         3                                 00090000
+ *       123456789012345678901234567890                                  00100000
+ *       @EMP NO:   @123456@                                             00110000
+         DFHMDF POS=(5,01),LENGTH=08,INITIAL='EMP NO:  '                 00120000
+ EMPNO   DFHMDF POS=(5,12),LENGTH=6,ATTRB=(UNPROT,IC)                    00130000
+         DFHMDF POS=(5,19),LENGTH=1,ATTRB=ASKIP                          00140000
+ *                                                                       00150000
+         DFHMDF POS=(7,01),LENGTH=08,INITIAL='NAME   : '                 00160001
+ FNAME   DFHMDF POS=(7,12),LENGTH=12,ATTRB=ASKIP                         00161001
+ LNAME   DFHMDF POS=(7,26),LENGTH=15,ATTRB=ASKIP                         00170001
+ *                                                                       00290000
+         DFHMDF POS=(09,01),LENGTH=08,INITIAL='SALARY :'                 00291005
+ SALARY  DFHMDF POS=(09,14),LENGTH=15,ATTRB=ASKIP                        00292007
+ *                                                                       00293001
+         DFHMDF POS=(11,01),LENGTH=12,INITIAL='COMMISSION :'             00294005
+ COMMX   DFHMDF POS=(11,14),LENGTH=15,ATTRB=ASKIP                        00295007
+ *                                                                       00296001
+         DFHMDF POS=(13,01),LENGTH=08,INITIAL='BONUS :'                  00297005
+ BONUS   DFHMDF POS=(13,14),LENGTH=15,ATTRB=ASKIP                        00298007
+ *                                                                       00299001
+         DFHMDF POS=(15,01),LENGTH=08,INITIAL='TOTAL :'                  00299105
+ TOTAL   DFHMDF POS=(15,14),LENGTH=15,ATTRB=ASKIP                        00299206
+ *                                                                       00299301
+ MSG     DFHMDF POS=(24,01),LENGTH=60,ATTRB=ASKIP                        00300000
+ *                                                                       00310000
+ NOMPFAIL DFHMDF POS=(24,76),LENGTH=01,ATTRB=(ASKIP,FSET),INITIAL='1'    00320000
+ *********************************************************************** 00321000
+ SUCCESS DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00330000
+ *                                                                       00331008
+         DFHMDF POS=(1,60),LENGTH=07,INITIAL='DATE :'                    00332008
+ DATES   DFHMDF POS=(1,68),LENGTH=10,ATTRB=ASKIP                         00333009
+ *                                                                       00334008
+         DFHMDF POS=(2,60),LENGTH=07,INITIAL='TIME :'                    00335008
+ TIMES   DFHMDF POS=(2,68),LENGTH=08,ATTRB=ASKIP                         00336009
+ *                                                                       00337008
+         DFHMDF POS=(12,30),LENGTH=50,ATTRB=(ASKIP,BRT),                X00340000
+                INITIAL='THANK YOU FOR VISITING OUR SITE'                00350000
+         DFHMSD TYPE=FINAL                                               00360000
+          END                                                            00370000
+1                                                                                                              PAGE 0024
+ MEMBER NAME  CICSMAPS
+ //TRAIN05M JOB ,,CLASS=A,                                               00010014
+ //         MSGCLASS=H,MSGLEVEL=(1,1),                                   00020000
+ //         NOTIFY=&SYSUID                                               00030000
+ //JOBPROC  JCLLIB ORDER=IBMUSER.COMPILER.JCLS                           00030116
+ //********************************************************************  00031016
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)************************  00032016
+ //*** I - DSN= TRAIN05.CLASS.CICS(HELLO)                   ***********  00033016
+ //*** P - IEBGENER COPY ONE DS TO ANOTHER                  ***********  00034016
+ //*** O - DSN=TRAIN05.CLASS.CICS(MAPS5P)*****************************   00035022
+ //********************************************************************  00036016
+ //STEP01   EXEC PGM=IEBGENER                                            00037016
+ //SYSUT1   DD   DSN=TRAIN05.CLASS.CICS(SALMAP),DISP=SHR                 00037220
+ //SYSUT2   DD   DSN=TRAIN05.CLASS.CICS(MAPS5P),DISP=SHR                 00037321
+ //SYSPRINT DD   SYSOUT=*                                                00037418
+ //SYSIN    DD   DUMMY                                                   00039216
+ //*****************STEP 2 FOLLOWS*************************************  00039316
+ //CICSMAP  EXEC CICSMAP1,                                               00050002
+ //         OUTC=*,                                                      00060000
+ //         COPYLIB=TRAIN05.CLASS.CICS.COPYLIB,    -->  BMS MAP LIBRARY  00070015
+ //         LOADLIB=MTITRG.CICS.LOADLIB,           **   DO NOT CHANGE    00080011
+ //         MAPNAME=MAPS5P                         -->  MEMBER NAME      00090018
+ //COPY.SYSUT1  DD  DSN=TRAIN05.CLASS.CICS(MAPS5P),                      00100018
+ //         DISP=SHR                                                     00110001
+1                                                                                                              PAGE 0025
+ MEMBER NAME  MAPS5P
+         PRINT  NOGEN                                                    00010000
+ MAPS5P  DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,                      X00020000
+                LANG=COBOL,TIOAPFX=YES,CTRL=FREEKB,                     X00030000
+                DSATTS=COLOR,MAPATTS=COLOR                               00040000
+ SALARY1 DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00050004
+ *                                                                       00050100
+         DFHMDF POS=(1,60),LENGTH=07,INITIAL='DATE :'                    00050202
+ DATE    DFHMDF POS=(1,68),LENGTH=10,ATTRB=ASKIP                         00051002
+ *                                                                       00052000
+         DFHMDF POS=(2,60),LENGTH=07,INITIAL='TIME :'                    00053002
+ TIME    DFHMDF POS=(2,68),LENGTH=08,ATTRB=ASKIP                         00054000
+ *                                                                       00055000
+         DFHMDF POS=(3,24),LENGTH=32,                                   X00056000
+                INITIAL='EMPLOYEE INFORMATION   - TEAM AA',             X00070000
+                ATTRB=ASKIP,COLOR=BLUE                                   00080000
+ *                 1         2         3                                 00090000
+ *       123456789012345678901234567890                                  00100000
+ *       @EMP NO:   @123456@                                             00110000
+         DFHMDF POS=(5,01),LENGTH=08,INITIAL='EMP NO:  '                 00120000
+ EMPNO   DFHMDF POS=(5,12),LENGTH=6,ATTRB=(UNPROT,IC)                    00130000
+         DFHMDF POS=(5,19),LENGTH=1,ATTRB=ASKIP                          00140000
+ *                                                                       00150000
+         DFHMDF POS=(7,01),LENGTH=08,INITIAL='NAME   : '                 00160001
+ FNAME   DFHMDF POS=(7,12),LENGTH=12,ATTRB=ASKIP                         00161001
+ LNAME   DFHMDF POS=(7,26),LENGTH=15,ATTRB=ASKIP                         00170001
+ *                                                                       00290000
+         DFHMDF POS=(09,01),LENGTH=08,INITIAL='SALARY :'                 00291005
+ SALARY  DFHMDF POS=(09,14),LENGTH=15,ATTRB=ASKIP                        00292007
+ *                                                                       00293001
+         DFHMDF POS=(11,01),LENGTH=12,INITIAL='COMMISSION :'             00294005
+ COMMX   DFHMDF POS=(11,14),LENGTH=15,ATTRB=ASKIP                        00295007
+ *                                                                       00296001
+         DFHMDF POS=(13,01),LENGTH=08,INITIAL='BONUS :'                  00297005
+ BONUS   DFHMDF POS=(13,14),LENGTH=15,ATTRB=ASKIP                        00298007
+ *                                                                       00299001
+         DFHMDF POS=(15,01),LENGTH=08,INITIAL='TOTAL :'                  00299105
+ TOTAL   DFHMDF POS=(15,14),LENGTH=15,ATTRB=ASKIP                        00299206
+ *                                                                       00299301
+ MSG     DFHMDF POS=(24,01),LENGTH=60,ATTRB=ASKIP                        00300000
+ *                                                                       00310000
+ NOMPFAIL DFHMDF POS=(24,76),LENGTH=01,ATTRB=(ASKIP,FSET),INITIAL='1'    00320000
+ *********************************************************************** 00321000
+ SUCCESS DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00330000
+ *                                                                       00331008
+         DFHMDF POS=(1,60),LENGTH=07,INITIAL='DATE :'                    00332008
+ DATES   DFHMDF POS=(1,68),LENGTH=10,ATTRB=ASKIP                         00333009
+ *                                                                       00334008
+         DFHMDF POS=(2,60),LENGTH=07,INITIAL='TIME :'                    00335008
+ TIMES   DFHMDF POS=(2,68),LENGTH=08,ATTRB=ASKIP                         00336009
+ *                                                                       00337008
+         DFHMDF POS=(12,30),LENGTH=50,ATTRB=(ASKIP,BRT),                X00340000
+                INITIAL='THANK YOU FOR VISITING OUR SITE'                00350000
+         DFHMSD TYPE=FINAL                                               00360000
+          END                                                            00370000
+1                                                                                                              PAGE 0026
+ MEMBER NAME  SALARY1
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5Q.
+       *****************************************************************
+       *** C1  12/22 IMPLAMENTED FIX PROVIDED FOR FIRST-TIME
+       ***
+       ***
+       ***
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+            COPY DFHAID.
+            COPY MAPS5P.
+        01  WORK-AREAS.
+            05  WS-RESP-CODE   PIC S9(09) COMP.
+            05  WS-TRANSID     PIC X(04) VALUE 'TRQ5'.
+            05  WS-EMP-SAL              PIC $Z,ZZZ,ZZ9.99.
+            05  WS-EMP-BONUS            PIC $Z,ZZZ,ZZ9.99.
+            05  WS-EMP-COMM             PIC $Z,ZZZ,ZZ9.99.
+            05  WS-EMP-TOTAL-SALARY     PIC S9(7)V9(2) COMP-3.
+            05  WS-EMP-PRT-TOTAL-SALARY PIC $Z,ZZZ,ZZ9.99.
+            05  WS-ABS-TIME             PIC S9(15) COMP-3.
+            05  WS-DISPLAY-DATE         PIC X(10).
+            05  WS-DISPLAY-TIME         PIC X(08).
+        01  WS-COMMAREA.
+            05  FILLER          PIC X(20).
+            05  WS-SWITCH       PIC X.
+            05  WS-OTHER-VARS   PIC X(99).
+            05  WS-INPUT-COUNT  PIC S9(03) COMP-3.
+        01  WS-EMP-REC.
+          05  WS-EMP-REC-EMP-NUM         PIC X(6).
+          05  WS-EMP-REC-LAST-NAME       PIC X(15).
+          05  WS-EMP-REC-FIRST-NAME      PIC X(12).
+          05  WS-EMP-REC-MID-IN          PIC X(1).
+          05  WS-EMP-REC-DEPT-NUM        PIC X(3).
+          05  WS-EMP-REC-JOB-TITLE       PIC X(11).
+          05  WS-EMP-REC-EMP-SAL         PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-PHN         PIC X(4).
+          05  WS-EMP-REC-EMP-BONUS       PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-COMM        PIC 9(5)V99.
+          05  FILLER                     PIC X(07).
+        LINKAGE SECTION.
+        01  DFHCOMMAREA.
+            05  FILLER          PIC X(20).
+            05  DFH-SWITCH      PIC X.
+            05  DFH-OTHER-VARS  PIC X(99).
+            05  DFH-INPUT-COUNT PIC S9(03) COMP-3.
+        PROCEDURE DIVISION.
+        0000-MAIN.
+            IF EIBAID = DFHCLEAR
+               EXEC CICS
+                    RETURN
+               END-EXEC
+            END-IF
+
+            IF EIBCALEN > ZERO
+                MOVE DFHCOMMAREA TO WS-COMMAREA
+            END-IF
+1                                                                                                              PAGE 0027
+ MEMBER NAME  SALARY1
+
+            EVALUATE TRUE
+            WHEN EIBCALEN = ZERO   OR
+                 EIBTRNID NOT EQUAL WS-TRANSID
+                 PERFORM 1000-FIRST-TIME
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            WHEN EIBAID = DFHPF9 OR DFHCLEAR
+                 PERFORM 4000-LAST-TIME
+                 PERFORM 3300-RETURN-WITHOUT-TRANSID
+            WHEN OTHER
+                 PERFORM 0500-PROCESS-USER-INPUT
+                 PERFORM 5000-PROCESS-DATE-TIME
+                 PERFORM 3100-SEND-MAP
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            END-EVALUATE
+
+            GOBACK
+            .
+        0500-PROCESS-USER-INPUT.
+            PERFORM 2000-RECEIVE-AND-PROCESS-MAP
+            PERFORM 5000-PROCESS-DATE-TIME
+            PERFORM 3100-SEND-MAP
+            .
+        1000-FIRST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            MOVE LOW-VALUES TO SALARY1O
+            MOVE 'FIRST TIME' TO MSGO
+            MOVE SPACES TO LNAMEO
+            MOVE SPACES TO FNAMEO
+            PERFORM 5000-PROCESS-DATE-TIME
+            EXEC CICS SEND
+                      MAP('SALARY1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+       **********PROCESS A BAD ERROR OCCURRED
+                MOVE '1000-FIRST-TIME ERROR'
+                     TO MSGO
+            END-EVALUATE
+            MOVE ZERO TO WS-INPUT-COUNT
+            .
+        2000-RECEIVE-AND-PROCESS-MAP.
+            EXEC CICS RECEIVE
+                      MAP   ('SALARY1')
+                      MAPSET('MAPS5P')
+                      RESP  (WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+            WHEN WS-RESP-CODE = DFHRESP(MAPFAIL)
+                MOVE 'NO INPUT SUPPLIED'
+                  TO MSGO
+            WHEN WS-RESP-CODE NOT =
+1                                                                                                              PAGE 0028
+ MEMBER NAME  SALARY1
+                DFHRESP(NORMAL) AND DFHRESP(EOC)
+                MOVE 'RESPONSE ERROR'
+                  TO MSGO
+       ************PROCESS A BAD ERROR OCCURRED
+            WHEN OTHER
+                PERFORM 3000-PROCESS-MAP-INPUT
+                PERFORM 5000-PROCESS-DATE-TIME
+            END-EVALUATE
+            .
+        3000-PROCESS-MAP-INPUT.
+            EXEC CICS
+                  READ FILE('TRAIN2F')
+                  INTO(WS-EMP-REC)
+                  RIDFLD(EMPNOI)
+                  RESP(WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 PERFORM 3050-PROCESS-VSAM-REC
+                 PERFORM 5000-PROCESS-DATE-TIME
+            WHEN  DFHRESP(NOTFND)
+                 MOVE 'RECORD NOT FOUND'
+                  TO MSGO
+            WHEN OTHER
+                 MOVE 'VSAM READ ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3050-PROCESS-VSAM-REC.
+            PERFORM 5000-PROCESS-DATE-TIME
+            MOVE WS-EMP-REC-LAST-NAME  TO LNAMEO
+            MOVE WS-EMP-REC-FIRST-NAME TO FNAMEO
+            MOVE WS-EMP-REC-EMP-SAL    TO WS-EMP-SAL
+            MOVE WS-EMP-REC-EMP-BONUS  TO WS-EMP-BONUS
+            MOVE WS-EMP-REC-EMP-COMM   TO WS-EMP-COMM
+            MOVE WS-EMP-SAL            TO SALARYO
+            MOVE WS-EMP-BONUS          TO BONUSO
+            MOVE WS-EMP-COMM           TO COMMXO
+            COMPUTE WS-EMP-PRT-TOTAL-SALARY =
+                       WS-EMP-REC-EMP-SAL +
+                       WS-EMP-REC-EMP-BONUS +
+                       WS-EMP-REC-EMP-COMM
+            MOVE WS-EMP-PRT-TOTAL-SALARY TO TOTALO
+            .
+        3100-SEND-MAP.
+            EXEC CICS SEND
+                      MAP('SALARY1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+                 MOVE 'SEND MAP ERROR'
+1                                                                                                              PAGE 0029
+ MEMBER NAME  SALARY1
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3200-RETURN-WITH-TRANSID.
+            EXEC CICS RETURN
+                   TRANSID(WS-TRANSID)
+                   COMMAREA(WS-COMMAREA)
+                   LENGTH(LENGTH OF WS-COMMAREA)
+            END-EXEC
+            .
+        3300-RETURN-WITHOUT-TRANSID.
+            EXEC CICS RETURN
+            END-EXEC
+            .
+        4000-LAST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            PERFORM 5000-PROCESS-DATE-TIME
+            EXEC CICS SEND
+                      MAP('SUCCESS')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+              MOVE 'LAST-TIME ERROR'
+                TO MSGO
+       **********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            EXEC CICS RETURN
+            END-EXEC
+            .
+        5000-PROCESS-DATE-TIME.
+       ******** ABSTIME(DATA-AREA)- TIME SINCE 00:00 ON 1 JAN 1900
+            EXEC CICS ASKTIME ABSTIME(WS-ABS-TIME)
+            END-EXEC
+       ******** YYYY/DD/MM FORMAT *********************************
+            EXEC CICS FORMATTIME ABSTIME(WS-ABS-TIME)
+                      MMDDYYYY(WS-DISPLAY-DATE) DATESEP('-')
+            END-EXEC
+       ******** HH:MM:SS FORMAT ***********************************
+            EXEC CICS FORMATTIME ABSTIME(WS-ABS-TIME)
+                      TIME(WS-DISPLAY-TIME) TIMESEP(':')
+            END-EXEC
+            MOVE WS-DISPLAY-DATE TO DATEO
+            MOVE WS-DISPLAY-TIME TO TIMEO
+            MOVE WS-DISPLAY-DATE TO DATESO
+            MOVE WS-DISPLAY-TIME TO TIMESO
+            .
+1                                                                                                              PAGE 0030
+ MEMBER NAME  CICSCOBS
+ //TRAIN05C JOB ,,NOTIFY=&SYSUID,CLASS=A,MSGLEVEL=(1,1),MSGCLASS=H       00010018
+ //JOBPROC  JCLLIB ORDER=IBMUSER.COMPILER.JCLS                           00010120
+ //********************************************************************  00011019
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)************************  00012019
+ //*** I - DSN= TRAIN05.CLASS.CICS(HELLO2)                   **********  00013025
+ //*** P - IEBGENER COPY ONE DS TO ANOTHER                  ***********  00015019
+ //*** O - DSN=TRAIN05.CLASS.CICS(TRAIN5Q)*****************************  00016029
+ //********************************************************************  00017019
+ //STEP01   EXEC PGM=IEBGENER                                            00021020
+ //SYSUT1   DD   DSN=TRAIN05.CLASS.CICS(SALARY1),DISP=SHR                00022028
+ //SYSUT2   DD   DSN=TRAIN05.CLASS.CICS(TRAIN5Q),DISP=SHR                00023028
+ //SYSPRINT DD   SYSOUT=*                                                00024018
+ //SYSIN    DD   DUMMY                                                   00024123
+ //********************************************************************  00025021
+ //*** I-P-O  I(INPUT)   P(PROCESS)   O(OUTPUT)************************  00026021
+ //*** I - //COBOL.SYSIN DSN= COBOL PROGRAM STORED IN MEMBER***********  00027021
+ //*** P - COBCL IGYWCL COBOL COMPILER*********************************  00029021
+ //*** O - DD SYSPRINT=* PRINT TO JES2*********************************  00029121
+ //********************************************************************  00029221
+ //CICSCOB  EXEC CICSCOB1,                                               00030008
+ //         SRCLIB=TRAIN05.CLASS.CICS,        --> SOURCE LIB NAME        00040017
+ //         MEM=TRAIN5Q,                      --> MEMBER                 00050029
+ //         COPYLIB=TRAIN05.CLASS.CICS.COPYLIB, ->BMS MAP LIB            00060017
+ //         BMSLIB=TRAIN05.CLASS.CICS.COPYLIB,  ->BMS MAP LIB            00070017
+ //         LOADLIB=MTITRG.CICS.LOADLIB   **  DO NOT CHANGE  **          00080011
+1                                                                                                              PAGE 0031
+ MEMBER NAME  TRAIN5Q
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5Q.
+       *****************************************************************
+       *** C1  12/22 IMPLAMENTED FIX PROVIDED FOR FIRST-TIME
+       ***
+       ***
+       ***
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+            COPY DFHAID.
+            COPY MAPS5P.
+        01  WORK-AREAS.
+            05  WS-RESP-CODE   PIC S9(09) COMP.
+            05  WS-TRANSID     PIC X(04) VALUE 'TRQ5'.
+            05  WS-EMP-SAL              PIC $Z,ZZZ,ZZ9.99.
+            05  WS-EMP-BONUS            PIC $Z,ZZZ,ZZ9.99.
+            05  WS-EMP-COMM             PIC $Z,ZZZ,ZZ9.99.
+            05  WS-EMP-TOTAL-SALARY     PIC S9(7)V9(2) COMP-3.
+            05  WS-EMP-PRT-TOTAL-SALARY PIC $Z,ZZZ,ZZ9.99.
+            05  WS-ABS-TIME             PIC S9(15) COMP-3.
+            05  WS-DISPLAY-DATE         PIC X(10).
+            05  WS-DISPLAY-TIME         PIC X(08).
+        01  WS-COMMAREA.
+            05  FILLER          PIC X(20).
+            05  WS-SWITCH       PIC X.
+            05  WS-OTHER-VARS   PIC X(99).
+            05  WS-INPUT-COUNT  PIC S9(03) COMP-3.
+        01  WS-EMP-REC.
+          05  WS-EMP-REC-EMP-NUM         PIC X(6).
+          05  WS-EMP-REC-LAST-NAME       PIC X(15).
+          05  WS-EMP-REC-FIRST-NAME      PIC X(12).
+          05  WS-EMP-REC-MID-IN          PIC X(1).
+          05  WS-EMP-REC-DEPT-NUM        PIC X(3).
+          05  WS-EMP-REC-JOB-TITLE       PIC X(11).
+          05  WS-EMP-REC-EMP-SAL         PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-PHN         PIC X(4).
+          05  WS-EMP-REC-EMP-BONUS       PIC 9(5)V99.
+          05  WS-EMP-REC-EMP-COMM        PIC 9(5)V99.
+          05  FILLER                     PIC X(07).
+        LINKAGE SECTION.
+        01  DFHCOMMAREA.
+            05  FILLER          PIC X(20).
+            05  DFH-SWITCH      PIC X.
+            05  DFH-OTHER-VARS  PIC X(99).
+            05  DFH-INPUT-COUNT PIC S9(03) COMP-3.
+        PROCEDURE DIVISION.
+        0000-MAIN.
+            IF EIBAID = DFHCLEAR
+               EXEC CICS
+                    RETURN
+               END-EXEC
+            END-IF
+
+            IF EIBCALEN > ZERO
+                MOVE DFHCOMMAREA TO WS-COMMAREA
+            END-IF
+1                                                                                                              PAGE 0032
+ MEMBER NAME  TRAIN5Q
+
+            EVALUATE TRUE
+            WHEN EIBCALEN = ZERO   OR
+                 EIBTRNID NOT EQUAL WS-TRANSID
+                 PERFORM 1000-FIRST-TIME
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            WHEN EIBAID = DFHPF9 OR DFHCLEAR
+                 PERFORM 4000-LAST-TIME
+                 PERFORM 3300-RETURN-WITHOUT-TRANSID
+            WHEN OTHER
+                 PERFORM 0500-PROCESS-USER-INPUT
+                 PERFORM 5000-PROCESS-DATE-TIME
+                 PERFORM 3100-SEND-MAP
+                 PERFORM 3200-RETURN-WITH-TRANSID
+            END-EVALUATE
+
+            GOBACK
+            .
+        0500-PROCESS-USER-INPUT.
+            PERFORM 2000-RECEIVE-AND-PROCESS-MAP
+            PERFORM 5000-PROCESS-DATE-TIME
+            PERFORM 3100-SEND-MAP
+            .
+        1000-FIRST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            MOVE LOW-VALUES TO SALARY1O
+            MOVE 'FIRST TIME' TO MSGO
+            MOVE SPACES TO LNAMEO
+            MOVE SPACES TO FNAMEO
+            PERFORM 5000-PROCESS-DATE-TIME
+            EXEC CICS SEND
+                      MAP('SALARY1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+       **********PROCESS A BAD ERROR OCCURRED
+                MOVE '1000-FIRST-TIME ERROR'
+                     TO MSGO
+            END-EVALUATE
+            MOVE ZERO TO WS-INPUT-COUNT
+            .
+        2000-RECEIVE-AND-PROCESS-MAP.
+            EXEC CICS RECEIVE
+                      MAP   ('SALARY1')
+                      MAPSET('MAPS5P')
+                      RESP  (WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+            WHEN WS-RESP-CODE = DFHRESP(MAPFAIL)
+                MOVE 'NO INPUT SUPPLIED'
+                  TO MSGO
+            WHEN WS-RESP-CODE NOT =
+1                                                                                                              PAGE 0033
+ MEMBER NAME  TRAIN5Q
+                DFHRESP(NORMAL) AND DFHRESP(EOC)
+                MOVE 'RESPONSE ERROR'
+                  TO MSGO
+       ************PROCESS A BAD ERROR OCCURRED
+            WHEN OTHER
+                PERFORM 3000-PROCESS-MAP-INPUT
+                PERFORM 5000-PROCESS-DATE-TIME
+            END-EVALUATE
+            .
+        3000-PROCESS-MAP-INPUT.
+            EXEC CICS
+                  READ FILE('TRAIN2F')
+                  INTO(WS-EMP-REC)
+                  RIDFLD(EMPNOI)
+                  RESP(WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 PERFORM 3050-PROCESS-VSAM-REC
+                 PERFORM 5000-PROCESS-DATE-TIME
+            WHEN  DFHRESP(NOTFND)
+                 MOVE 'RECORD NOT FOUND'
+                  TO MSGO
+            WHEN OTHER
+                 MOVE 'VSAM READ ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3050-PROCESS-VSAM-REC.
+            PERFORM 5000-PROCESS-DATE-TIME
+            MOVE WS-EMP-REC-LAST-NAME  TO LNAMEO
+            MOVE WS-EMP-REC-FIRST-NAME TO FNAMEO
+            MOVE WS-EMP-REC-EMP-SAL    TO WS-EMP-SAL
+            MOVE WS-EMP-REC-EMP-BONUS  TO WS-EMP-BONUS
+            MOVE WS-EMP-REC-EMP-COMM   TO WS-EMP-COMM
+            MOVE WS-EMP-SAL            TO SALARYO
+            MOVE WS-EMP-BONUS          TO BONUSO
+            MOVE WS-EMP-COMM           TO COMMXO
+            COMPUTE WS-EMP-PRT-TOTAL-SALARY =
+                       WS-EMP-REC-EMP-SAL +
+                       WS-EMP-REC-EMP-BONUS +
+                       WS-EMP-REC-EMP-COMM
+            MOVE WS-EMP-PRT-TOTAL-SALARY TO TOTALO
+            .
+        3100-SEND-MAP.
+            EXEC CICS SEND
+                      MAP('SALARY1')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+                 MOVE 'SEND MAP ERROR'
+1                                                                                                              PAGE 0034
+ MEMBER NAME  TRAIN5Q
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3200-RETURN-WITH-TRANSID.
+            EXEC CICS RETURN
+                   TRANSID(WS-TRANSID)
+                   COMMAREA(WS-COMMAREA)
+                   LENGTH(LENGTH OF WS-COMMAREA)
+            END-EXEC
+            .
+        3300-RETURN-WITHOUT-TRANSID.
+            EXEC CICS RETURN
+            END-EXEC
+            .
+        4000-LAST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            PERFORM 5000-PROCESS-DATE-TIME
+            EXEC CICS SEND
+                      MAP('SUCCESS')
+                      MAPSET('MAPS5P')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+              MOVE 'LAST-TIME ERROR'
+                TO MSGO
+       **********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            EXEC CICS RETURN
+            END-EXEC
+            .
+        5000-PROCESS-DATE-TIME.
+       ******** ABSTIME(DATA-AREA)- TIME SINCE 00:00 ON 1 JAN 1900
+            EXEC CICS ASKTIME ABSTIME(WS-ABS-TIME)
+            END-EXEC
+       ******** YYYY/DD/MM FORMAT *********************************
+            EXEC CICS FORMATTIME ABSTIME(WS-ABS-TIME)
+                      MMDDYYYY(WS-DISPLAY-DATE) DATESEP('-')
+            END-EXEC
+       ******** HH:MM:SS FORMAT ***********************************
+            EXEC CICS FORMATTIME ABSTIME(WS-ABS-TIME)
+                      TIME(WS-DISPLAY-TIME) TIMESEP(':')
+            END-EXEC
+            MOVE WS-DISPLAY-DATE TO DATEO
+            MOVE WS-DISPLAY-TIME TO TIMEO
+            MOVE WS-DISPLAY-DATE TO DATESO
+            MOVE WS-DISPLAY-TIME TO TIMESO
+            .
+1                                                                                                              PAGE 0035
+ MEMBER NAME  MENUMAP
+         PRINT  NOGEN                                                    00010000
+ MAPS5P  DFHMSD TYPE=&SYSPARM,MODE=INOUT,TERM=ALL,                      X00020000
+                LANG=COBOL,TIOAPFX=YES,CTRL=FREEKB,                     X00030000
+                DSATTS=COLOR,MAPATTS=COLOR                               00040000
+ LOGON1  DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00050000
+ *                                                                       00050100
+         DFHMDF POS=(1,61),LENGTH=07,INITIAL='DATE : '                   00050200
+ DATE    DFHMDF POS=(1,68),LENGTH=09,ATTRB=ASKIP                         00051000
+ *                                                                       00052000
+         DFHMDF POS=(2,61),LENGTH=07,INITIAL='TIME : '                   00053000
+ TIME    DFHMDF POS=(2,68),LENGTH=08,ATTRB=ASKIP                         00054000
+ *                                                                       00055000
+         DFHMDF POS=(3,24),LENGTH=32,                                   X00056000
+                INITIAL='EMPLOYEE INFORMATION   - TEAM AA',             X00070000
+                ATTRB=ASKIP,COLOR=BLUE                                   00080000
+ *                 1         2         3                                 00090000
+ *       123456789012345678901234567890                                  00100000
+ *       @EMP NO:   @123456@                                             00110000
+         DFHMDF POS=(5,01),LENGTH=08,INITIAL='EMP NO:  '                 00120000
+ EMPNO   DFHMDF POS=(5,12),LENGTH=6,ATTRB=(UNPROT,IC)                    00130000
+         DFHMDF POS=(5,19),LENGTH=1,ATTRB=ASKIP                          00140000
+ *                                                                       00150000
+         DFHMDF POS=(7,01),LENGTH=08,INITIAL='LNAME  : '                 00160000
+ LNAME   DFHMDF POS=(7,12),LENGTH=15,ATTRB=ASKIP                         00170000
+ *                                                                       00180000
+         DFHMDF POS=(9,01),LENGTH=08,INITIAL='FNAME  : '                 00190000
+ FNAME   DFHMDF POS=(9,12),LENGTH=12,ATTRB=ASKIP                         00200000
+ *                                                                       00203000
+ *       DFHMDF POS=(15,1),LENGTH=16,ATTRB=ASKIP,                        00210000
+ *              INITIAL='REGINALD CALHOUN'                               00220000
+ *       DFHMDF POS=(16,1),LENGTH=16,ATTRB=ASKIP,                        00230000
+ *              INITIAL='LIVES IN GEORGIA'                               00240000
+ *       DFHMDF POS=(17,1),LENGTH=07,ATTRB=ASKIP,                        00250000
+ *              INITIAL='MARRIED'                                        00260000
+ *       DFHMDF POS=(18,1),LENGTH=06,ATTRB=ASKIP,                        00270000
+ *              INITIAL='3 KIDS'                                         00280000
+ *                                                                       00290000
+ MSG     DFHMDF POS=(24,01),LENGTH=60,ATTRB=ASKIP                        00300000
+ *                                                                       00310000
+ NOMPFAIL DFHMDF POS=(24,76),LENGTH=01,ATTRB=(ASKIP,FSET),INITIAL='1'    00320000
+ *********************************************************************** 00321000
+ SUCCESS DFHMDI SIZE=(24,80),LINE=1,COLUMN=1                             00330000
+         DFHMDF POS=(12,30),LENGTH=50,ATTRB=(ASKIP,BRT),                X00340000
+                INITIAL='THANK YOU FOR VISITING OUR SITE'                00350000
+         DFHMSD TYPE=FINAL                                               00360000
+          END                                                            00370000
+1                                                                                                              PAGE 0036
+ MEMBER NAME  MENU1
+        ID DIVISION.
+        PROGRAM-ID. TRAIN5P.
+       *****************************************************************
+       *** C1  12/22 IMPLAMENTED FIX PROVIDED FOR FIRST-TIME
+       ***
+       ***
+       ***
+       *****************************************************************
+        DATE-COMPILED.
+        DATA DIVISION.
+        WORKING-STORAGE SECTION.
+            COPY DFHAID.
+            COPY MAPS5R.
+        01  WORK-AREAS.
+            05  WS-RESP-CODE   PIC S9(9) COMP.
+            05  WS-TRANSID     PIC X(4) VALUE 'TRR5'.
+        01  WS-COMMAREA.
+            05  FILLER          PIC X(20).
+            05  WS-SWITCH       PIC X.
+            05  WS-OTHER-VARS   PIC X(99).
+            05  WS-INPUT-COUNT  PIC S9(3) COMP-3.
+        LINKAGE SECTION.
+        01  DFHCOMMAREA.
+            05  FILLER          PIC X(20).
+            05  DFH-SWITCH      PIC X.
+            05  DFH-OTHER-VARS  PIC X(99).
+            05  DFH-INPUT-COUNT PIC S9(3) COMP-3.
+        PROCEDURE DIVISION.
+        0000-MAIN.
+            IF EIBAID = DFHCLEAR
+               EXEC CICS
+                    RETURN
+               END-EXEC
+            END-IF
+
+            IF EIBCALEN > ZERO
+                MOVE DFHCOMMAREA TO WS-COMMAREA
+            END-IF
+
+            EVALUATE TRUE
+            WHEN EIBCALEN = ZERO   OR
+                 EIBTRNID NOT EQUAL WS-TRANSID
+               PERFORM 1000-FIRST-TIME
+            WHEN EIBAID = DFHPF9 OR DFHCLEAR
+              PERFORM 4000-LAST-TIME
+            WHEN OTHER
+               PERFORM 0500-PROCESS-USER-INPUT
+               PERFORM 3100-SEND-MAP
+            END-EVALUATE
+
+            PERFORM 3200-RETURN-WITH-TRANSID
+            GOBACK
+            .
+        0500-PROCESS-USER-INPUT.
+              PERFORM 2000-RECEIVE-AND-PROCESS-MAP
+              PERFORM 3100-SEND-MAP
+            .
+        1000-FIRST-TIME.
+1                                                                                                              PAGE 0037
+ MEMBER NAME  MENU1
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            MOVE LOW-VALUES TO MENU1O
+            MOVE 'FIRST TIME' TO MSGO
+            MOVE SPACES TO LNAMEO
+            MOVE SPACES TO FNAMEO
+            EXEC CICS SEND
+                      MAP('MANU1')
+                      MAPSET('MAPS5R') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+       **********PROCESS A BAD ERROR OCCURRED
+                MOVE '1000-FIRST-TIME ERROR'
+                     TO MSGO
+            END-EVALUATE
+            MOVE ZERO TO WS-INPUT-COUNT
+            PERFORM 3200-RETURN-WITH-TRANSID
+            .
+        2000-RECEIVE-AND-PROCESS-MAP.
+            EXEC CICS RECEIVE
+                      MAP   ('MENU1')
+                      MAPSET('MAPS5R')
+                      RESP  (WS-RESP-CODE)
+            END-EXEC
+
+            EVALUATE TRUE
+            WHEN WS-RESP-CODE = DFHRESP(MAPFAIL)
+                MOVE 'NO INPUT SUPPLIED'
+                  TO MSGO
+            WHEN WS-RESP-CODE NOT =
+                DFHRESP(NORMAL) AND DFHRESP(EOC)
+                MOVE 'RESPONSE ERROR'
+                  TO MSGO
+       ************PROCESS A BAD ERROR OCCURRED
+            WHEN OTHER
+                PERFORM 3000-PROCESS-MAP-INPUT
+            END-EVALUATE
+            .
+        3000-PROCESS-MAP-INPUT.
+       ******TEST THE SWITCH
+       ******PROCESS THE MAP INPUT AND MOVE
+       ******ANSWERS TO OUTPUT MAP
+            EVALUATE TRUE
+ C1           WHEN EMPNOI = '123456'
+                  MOVE 'JOHN' TO FNAMEO
+                  MOVE 'SMITH' TO LNAMEO
+              WHEN OTHER
+                  MOVE SPACES TO LNAMEO
+                  MOVE SPACES TO FNAMEO
+                  MOVE 'NOT FOUND OR INVALID INPUT' TO MSGO
+            END-EVALUATE
+            ADD 1 TO WS-INPUT-COUNT
+            .
+        3100-SEND-MAP.
+            EXEC CICS SEND
+1                                                                                                              PAGE 0038
+ MEMBER NAME  MENU1
+                      MAP('MENU1')
+                      MAPSET('MAPS5R')
+                      ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+                 MOVE 'SEND MAP ERROR'
+                  TO MSGO
+       *********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            .
+        3200-RETURN-WITH-TRANSID.
+            EXEC CICS RETURN
+                   TRANSID(WS-TRANSID)
+                   COMMAREA(WS-COMMAREA)
+                   LENGTH(LENGTH OF WS-COMMAREA)
+            END-EXEC
+            .
+        4000-LAST-TIME.
+       *****MOVE VALUES, SUCH AS DATE, TO MAP
+            EXEC CICS SEND
+                      MAP('SUCCESS')
+                      MAPSET('MAPS5R') ERASE
+                      RESP (WS-RESP-CODE)
+            END-EXEC
+            EVALUATE WS-RESP-CODE
+            WHEN  DFHRESP(NORMAL)
+                 CONTINUE
+            WHEN OTHER
+              MOVE 'LAST-TIME ERROR'
+                TO MSGO
+       **********PROCESS A BAD ERROR OCCURRED
+            END-EVALUATE
+            EXEC CICS RETURN
+            END-EXEC
+            .
+
